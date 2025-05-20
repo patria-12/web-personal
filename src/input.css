@@ -1,0 +1,43 @@
+
+@import "tailwindcss";
+
+
+
+@theme {
+    --color-secondari:oklch(28.4% 0.109 3.907);
+    --color-primary:#E91E63;
+    --color-dark:#3A0519;
+
+}
+
+.navbar-fixed{
+  @apply fixed z-[49];
+  backdrop-filter: blur(10px);
+  opacity: 90%;
+  background-color: white;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+body{
+  font-family: 'inter', sans-serif;
+}
+
+
+.hambuerger-line{
+  @apply w-[28px] h-[2px] my-2 block bg-dark;
+}
+
+.hambuerger-active > span:nth-child(1){
+  @apply  rotate-45;
+}
+
+.hambuerger-active > span:nth-child(3){
+  @apply  -rotate-45;
+}
+
+.hambuerger-active > span:nth-child(2){
+  @apply scale-0;
+}
+
+
+
